@@ -2,8 +2,6 @@ import { Booking } from "../components/Booking";
 import { motion } from "motion/react";
 import { Calendar, Clock, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "../components/ui/card";
-import { FloatingLiveChatButton } from "../components/LiveChatButton";
-import { toast } from "sonner@2.0.3";
 
 export function BookingPage() {
   return (
@@ -82,17 +80,6 @@ export function BookingPage() {
 
       {/* Booking Form */}
       <Booking />
-
-      {/* Floating Live Chat Button */}
-      <FloatingLiveChatButton 
-        onClick={() => {
-          toast.success("Live chat support coming soon!", {
-            description: "Need help with booking? Our team will be available 24/7 to assist you.",
-            duration: 3000,
-          });
-        }}
-        position="bottom-right"
-      />
     </div>
   );
 }

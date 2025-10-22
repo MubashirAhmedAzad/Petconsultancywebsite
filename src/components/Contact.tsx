@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { Card, CardContent } from "./ui/card";
-import { Button } from "./ui/button";
-import { Mail, Phone, MapPin, Clock, MessageCircle, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const contactInfo = [
   {
@@ -39,11 +38,6 @@ const contactInfo = [
 ];
 
 export function Contact() {
-  const handleChatClick = () => {
-    // Handle chat functionality
-    console.log("Opening chat...");
-  };
-
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Background Elements */}
@@ -135,29 +129,6 @@ export function Contact() {
                 );
               })}
             </div>
-
-            {/* Quick Chat Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-            >
-              <Button
-                onClick={handleChatClick}
-                className="w-full rounded-full bg-gradient-to-r from-primary via-accent to-secondary hover:shadow-2xl transition-all duration-500 h-14 text-lg group relative overflow-hidden"
-              >
-                <motion.div
-                  className="absolute inset-0 bg-white/20"
-                  initial={{ x: "-100%" }}
-                  whileHover={{ x: "100%" }}
-                  transition={{ duration: 0.5 }}
-                />
-                <MessageCircle className="mr-2 h-5 w-5 relative z-10" />
-                <span className="relative z-10">Start Live Chat</span>
-                <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform relative z-10" />
-              </Button>
-            </motion.div>
           </div>
 
           {/* Map Section with Visit Our Office Card */}
