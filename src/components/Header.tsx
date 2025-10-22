@@ -87,7 +87,7 @@ export function Header() {
             ))}
             <Button
               onClick={() => handleNavClick("/booking")}
-              className="ml-2 h-11 px-6 rounded-full bg-gradient-to-r from-primary via-accent to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="ml-2 h-11 px-6 rounded-full bg-gradient-to-r from-primary via-accent to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-0 active:outline-none active:ring-0"
             >
               <Calendar className="w-4 h-4 mr-2" />
               Book Now
@@ -101,7 +101,7 @@ export function Header() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="p-2.5 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+              className="p-2.5 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-0 active:outline-none active:ring-0"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
@@ -159,7 +159,7 @@ export function Header() {
               >
                 <Button
                   onClick={() => handleNavClick("/booking")}
-                  className="w-full h-12 rounded-full bg-gradient-to-r from-primary via-accent to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 min-h-[48px]"
+                  className="w-full h-12 rounded-full bg-gradient-to-r from-primary via-accent to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 min-h-[48px] focus:outline-none focus:ring-0 active:outline-none active:ring-0"
                   size="lg"
                 >
                   <Calendar className="w-5 h-5 mr-2" />

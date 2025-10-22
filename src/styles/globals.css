@@ -130,7 +130,17 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
+  }
+  
+  /* Remove focus outlines and rings from navigation and interactive elements */
+  button:focus,
+  button:focus-visible,
+  button:active,
+  a:focus,
+  a:focus-visible,
+  a:active {
+    outline: none !important;
   }
 
   body {

@@ -33,7 +33,8 @@ export function NavItem({
         cursor-pointer
         min-h-[48px]
         w-full lg:w-auto
-        focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent
+        focus:outline-none focus:ring-0 focus:border-transparent
+        active:outline-none active:ring-0 active:border-transparent
         ${
           isActive
             ? 'bg-gradient-to-r from-[#6C5CE7] to-[#FF5CA8] border-transparent shadow-[inset_0_2px_8px_rgba(0,0,0,0.3)]'
