@@ -17,6 +17,8 @@ import {
 } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "../components/ui/dialog";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { FloatingLiveChatButton } from "../components/LiveChatButton";
+import { toast } from "sonner@2.0.3";
 
 const mainServices = [
   {
@@ -431,6 +433,17 @@ export function ServicesPage() {
           </Dialog>
         )}
       </AnimatePresence>
+
+      {/* Floating Live Chat Button */}
+      <FloatingLiveChatButton 
+        onClick={() => {
+          toast.success("Live chat support coming soon!", {
+            description: "Our team will be available 24/7 to assist you.",
+            duration: 3000,
+          });
+        }}
+        position="bottom-right"
+      />
     </div>
   );
 }

@@ -160,14 +160,15 @@ export function Contact() {
             </motion.div>
           </div>
 
-          {/* Map */}
+          {/* Map Section with Visit Our Office Card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="flex flex-col gap-4"
           >
+            {/* Map Card */}
             <Card className="overflow-hidden glass border-primary/20 shadow-2xl">
               <CardContent className="p-0">
                 <div className="relative w-full h-[500px] bg-muted rounded-lg overflow-hidden">
@@ -185,13 +186,16 @@ export function Contact() {
               </CardContent>
             </Card>
 
-            {/* Floating Info Card */}
+            {/* Visit Our Office Card - Positioned 16px below map (gap-4 = 16px) */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
-              className="absolute -bottom-6 left-6 right-6 glass p-6 rounded-2xl shadow-2xl border border-primary/20"
+              className="glass p-6 rounded-2xl border border-primary/20"
+              style={{
+                boxShadow: '0 8px 20px rgba(0, 0, 0, 0.14)'
+              }}
             >
               <div className="flex items-start gap-4">
                 <motion.div
