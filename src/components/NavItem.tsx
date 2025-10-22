@@ -25,13 +25,14 @@ export function NavItem({
       whileTap={{ scale: 0.98 }}
       className={`
         group relative
-        h-11 px-3 py-2
+        h-12 px-4 py-3
         rounded-full
         border
         transition-all duration-300
-        flex items-center gap-2
+        flex items-center gap-3
         cursor-pointer
-        min-h-[44px]
+        min-h-[48px]
+        w-full lg:w-auto
         focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent
         ${
           isActive
@@ -46,7 +47,7 @@ export function NavItem({
       {/* Icon */}
       <Icon 
         className={`
-          w-5 h-5 relative z-10
+          w-5 h-5 relative z-10 flex-shrink-0
           transition-colors duration-300
           ${
             isActive

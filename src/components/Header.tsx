@@ -45,12 +45,12 @@ export function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+        isScrolled || isMobileMenuOpen
           ? "glass shadow-lg"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3 lg:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
@@ -75,7 +75,7 @@ export function Header() {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-4">
             {navItems.map((item) => (
               <NavItem
                 key={item.id}
@@ -85,16 +85,26 @@ export function Header() {
                 onClick={() => handleNavClick(item.path)}
               />
             ))}
+            <Button
+              onClick={() => handleNavClick("/booking")}
+              className="ml-2 h-11 px-6 rounded-full bg-gradient-to-r from-primary via-accent to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <Calendar className="w-4 h-4 mr-2" />
+              Book Now
+            </Button>
             <ThemeToggle />
           </nav>
 
           {/* Mobile Actions */}
           <div className="lg:hidden flex items-center gap-2">
             <ThemeToggle />
-            <button
-              className="p-2 rounded-full hover:bg-primary/10 transition-colors"
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-2.5 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
+              aria-expanded={isMobileMenuOpen}
             >
               <motion.div
                 animate={{ rotate: isMobileMenuOpen ? 180 : 0 }}
@@ -106,7 +116,7 @@ export function Header() {
                   <Menu className="w-6 h-6 text-foreground" />
                 )}
               </motion.div>
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -118,8 +128,9 @@ export function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="lg:hidden mt-4 flex flex-col gap-2 overflow-hidden"
+              className="lg:hidden mt-6 flex flex-col gap-3 overflow-hidden pb-4"
             >
+              {/* Mobile Menu Items */}
               {navItems.map((item, index) => (
                 <motion.div
                   key={item.id}
@@ -137,6 +148,24 @@ export function Header() {
                   />
                 </motion.div>
               ))}
+              
+              {/* Mobile Book Consultation Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ delay: navItems.length * 0.05 }}
+                className="w-full pt-2"
+              >
+                <Button
+                  onClick={() => handleNavClick("/booking")}
+                  className="w-full h-12 rounded-full bg-gradient-to-r from-primary via-accent to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 min-h-[48px]"
+                  size="lg"
+                >
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Book Consultation
+                </Button>
+              </motion.div>
             </motion.nav>
           )}
         </AnimatePresence>
