@@ -199,13 +199,13 @@ export function Pets() {
                   className="group overflow-hidden border-primary/10 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl glass cursor-pointer h-80"
                   onClick={() => navigate(`/pets/${pet.id}`)}
                 >
-                  <CardContent className="p-3 h-full">
-                    <div className="relative h-full w-full overflow-hidden rounded-xl">
+                  <CardContent className="p-0 h-full">
+                    <div className="relative h-full w-full overflow-hidden">
                       {/* Full Cover Image */}
                       <ImageWithFallback
                         src={pet.image}
                         alt={pet.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 rounded-xl"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       
                       {/* Color Overlay */}
