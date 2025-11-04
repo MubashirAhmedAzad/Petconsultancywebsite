@@ -462,7 +462,7 @@ export function Booking() {
               Booking Confirmed! 🎉
             </DialogTitle>
             <DialogDescription className="text-center text-muted-foreground text-lg">
-              Thank you for choosing Pet Consultancy 24×7! We'll send you a
+              Thank you for choosing PawEdge – Pet Consultation 24×7! We'll send you a
               confirmation email shortly with all the details.
             </DialogDescription>
           </DialogHeader>

@@ -39,14 +39,14 @@ export function Footer() {
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-foreground">Pet Consultancy</span>
+                  <span className="text-foreground">PawEdge</span>
                   <Sparkles className="w-4 h-4 text-secondary" />
                 </div>
                 <div className="text-primary">24×7</div>
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Professional pet consultancy services dedicated to the health and
+              Professional pet care services dedicated to the health and
               happiness of your beloved companions. Available round-the-clock for your convenience.
             </p>
             <div className="flex items-center gap-2 text-muted-foreground">
@@ -140,8 +140,8 @@ export function Footer() {
                 </div>
                 <div>
                   <p className="text-foreground">Email Us</p>
-                  <a href="mailto:hello@petconsultancy247.com" className="hover:text-primary transition-colors break-all">
-                    hello@petconsultancy247.com
+                  <a href="mailto:hello@pawedge247.com" className="hover:text-primary transition-colors break-all">
+                    hello@pawedge247.com
                   </a>
                 </div>
               </li>
@@ -168,7 +168,7 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-muted-foreground text-center md:text-left">
-              © {currentYear} Pet Consultancy 24×7. All rights reserved. Made with{" "}
+              © {currentYear} PawEdge – Pet Consultation 24×7. All rights reserved. Made with{" "}
               <Heart className="w-4 h-4 inline text-accent fill-accent" /> for pets.
             </p>
             

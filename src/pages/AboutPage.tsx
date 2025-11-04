@@ -7,7 +7,7 @@ const milestones = [
   {
     year: "2010",
     title: "Founded",
-    description: "Pet Consultancy 24×7 was born with a mission to provide exceptional pet care services around the clock.",
+    description: "PawEdge – Pet Consultation 24×7 was born with a mission to provide exceptional pet care services around the clock.",
     icon: "🎯",
     color: "from-primary to-accent",
   },

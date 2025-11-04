@@ -45,7 +45,7 @@ export function TestimonialsPage() {
               className="text-muted-foreground text-xl max-w-3xl mx-auto"
             >
               Read what our satisfied clients have to say about their experience with
-              Pet Consultancy 24×7. Their trust and happiness drive us forward!
+              PawEdge – Pet Consultation 24×7. Their trust and happiness drive us forward!
             </motion.p>
           </motion.div>
 

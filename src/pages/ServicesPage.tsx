@@ -240,7 +240,7 @@ export function ServicesPage() {
           >
             <h2 className="text-foreground mb-6">
               Why Choose
-              <span className="gradient-text block">Pet Consultancy 24×7</span>
+              <span className="gradient-text block">PawEdge – Pet Consultation 24×7</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               We go above and beyond to ensure your pet receives the best care possible

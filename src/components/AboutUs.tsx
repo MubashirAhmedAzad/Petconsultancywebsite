@@ -94,7 +94,7 @@ export function AboutUs() {
             <span className="gradient-text block">Top Priority</span>
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Founded in 2010, Pet Consultancy 24×7 has grown into a trusted name in
+            Founded in 2010, PawEdge – Pet Consultation 24×7 has grown into a trusted name in
             pet care. Our mission is simple: provide exceptional, compassionate care
             that enhances the bond between pets and their families.
           </p>

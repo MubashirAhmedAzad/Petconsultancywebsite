@@ -15,8 +15,8 @@ const contactInfo = [
     id: 2,
     icon: Mail,
     title: "Email",
-    details: "hello@petconsultancy247.com",
-    link: "mailto:hello@petconsultancy247.com",
+    details: "hello@pawedge247.com",
+    link: "mailto:hello@pawedge247.com",
     color: "from-accent to-secondary",
   },
   {
@@ -151,7 +151,7 @@ export function Contact() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Pet Consultancy 24×7 Location"
+                    title="PawEdge – Pet Consultation 24×7 Location"
                   />
                 </div>
               </CardContent>

@@ -775,6 +775,10 @@
     margin-right: calc(var(--spacing) * 2);
   }
 
+  .mr-12 {
+    margin-right: calc(var(--spacing) * 12);
+  }
+
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }

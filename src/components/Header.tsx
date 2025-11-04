@@ -56,7 +56,7 @@ export function Header() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-3 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer mr-12"
             onClick={() => handleNavClick("/")}
           >
             <div className="relative">
@@ -66,8 +66,8 @@ export function Header() {
               </div>
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <span className="text-foreground">Pet Consultancy</span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-foreground">PawEdge</span>
                 <Sparkles className="w-4 h-4 text-secondary" />
               </div>
               <div className="text-primary">24×7</div>
@@ -75,7 +75,7 @@ export function Header() {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-4">
+          <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <NavItem
                 key={item.id}
